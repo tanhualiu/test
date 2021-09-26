@@ -1,0 +1,45 @@
+
+NX云环境使用介绍
+
+
+一.用账号登录客户端
+
+二.各个组件使用演示
+
+三.任务调度系统介绍
+
+四.BI平台的使用介绍
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+云环境地址
+
+http://172.16.1.206:8090/
+
+kafka-topics.sh --list --zookeeper nx-work-data001:2181,nx-work-data002:2181,nx-work-data003:2181
+
+spark-submit --class  org.apache.spark.examples.SparkPi --master spark://nx-work-data006:7077 examples/jars/spark-examples_2.11-2.4.8.jar 100
+
+spark-submit --class  org.apache.spark.examples.SparkPi --master yarn examples/jars/spark-examples_2.11-2.4.8.jar 100
